@@ -1,5 +1,5 @@
 const button = document.querySelector('button');
-const form = document.querySelector('#blablabla');
+const form = document.querySelector('#form');
 const popup = document.querySelector('.popup');
 
 button.addEventListener('click', () => {

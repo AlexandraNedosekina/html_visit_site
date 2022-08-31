@@ -17,17 +17,23 @@
                 <div class="left-column">
                   <h1>Мастер-классы<br> от Create Studio</h1>
                     <button type="submit" class="button">Записаться</button>
-                  <div class="popup">
+                  
+                    <div class="popup">
                     <div class="popup__container">
                       <div class="popup__wrapper">
-                        <div id="blablabla">
-                          <form role="form" action="/requestFine" autocomplete="off" method="POST">
-                            <label class="center_label">Заявка на участие</label>
-                            <label>ФИО</label>
-                            <input type="text" name="nameReq">
-                            <label>Email</label>
-                            <input type="text" name="nameReq">
-                            <button type="submit" class="send">Отправить</button>
+                        <div id="form">
+                            <h2>Заявка на участие</h2>
+                            
+                            <form action="https://jsonplaceholder.typicode.com/users" autocomplete="off" method="POST"></form>
+                            
+                            <label class="visually-hidden" for="form-name">ФИО</label>
+                              <input type="text" id="form-name" class="input-field" placeholder="ФИО"/>
+
+                            <label class="visually-hidden" for="form-email">E-mail</label>
+                              <input type="email" id="form-email" class="input-field" placeholder="E-mail"/>
+
+                            <label class="visually-hidden" for="submit btn">Submit button</label>
+                              <input class="submit btn" id="submit-btn" type="submit" value="Отправить"/>
                           </form>
                         </div>
                       </div>

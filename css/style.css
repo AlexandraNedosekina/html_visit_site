@@ -29,25 +29,43 @@ h1 {
   padding-bottom: 96px;
 }
 
-.button {
+.btn {
   position: relative;
-
   display: block;
-  width: 332px;
-  height: 86px;
-  margin: 0 auto;
+
+  width: 330px;
+  height: 80px;
+
+  margin: 0;
+
   font-weight: 400;
   font-size: 26px;
   line-height: 30px;
-  text-decoration: none;
-  text-transform: none;
   text-align: center;
+  align-items: center;
+
   color: #F3F3F3;
   background-color: #6C8474;
+
   border: none;
-  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.28);
-  border-radius: 54.5px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.28);
+  border-radius: 50px;
 }
+
+.btn:hover {
+  background-color: #ffffff;
+  color: #6C8474;
+  border: none;
+}
+
+.btn:active {
+  background-color: #D9D9D9;
+}
+
+.btn:disabled {
+  opacity: 0.1;
+}
+
 
 .columns-container {
   display: flex;
@@ -65,24 +83,26 @@ h1 {
   margin-top: 122px;
   margin-left: 147px;
 }
-#blablabla {
+#form {
   display: none;
-  animation-duration: 1.5s;
+  animation-duration: 1.2s;
   animation-fill-mode: both;
   animation-name: fadeIn;
 }
 
-#blablabla.open {
+#form.open {
   display: block;
 }
 
 .popup {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(17, 17, 17, 0.5);
+  position: absolute;
+  width: 759px;
+  height: 520px;
+  left: 341px;
+  top: 29px;
+  
+  background: #FFFFFF;
+  border-radius: 19px;
   transition: all 0.5s ease;
   display: none;
 }
@@ -106,8 +126,25 @@ h1 {
   padding: 40px;
 }
 
-.center_label {
+.visually-hidden {
+  display: none;
+}
 
+.input-field {
+  width: 550px;
+  height: 54px;
+
+  margin-bottom: 40px;
+
+  background: #F9F9F9;
+  border: 1px solid #C4C4C4;
+  border-radius: 15px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  text-indent: 15px;
 }
 
 @keyframes fadeIn {
